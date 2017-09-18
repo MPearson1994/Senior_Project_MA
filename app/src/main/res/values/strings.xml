@@ -1,0 +1,22 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dateHeader">Today\'s Date:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="clothingTypes">
+        <item>Short Sleeve Shirt</item>
+        <item>Long Sleeve Shirt</item>
+        <item>Jacket</item>
+        <item>Pants</item>
+        <item>Shorts</item>
+        <item>Professional Dress</item>
+        <item>Shoe</item>
+        <item>Hat</item>
+        <item>Accessory</item>
+        <item>other</item>
+    </string-array>
+
+</resources>
