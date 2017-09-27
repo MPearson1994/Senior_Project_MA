@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import android.os.Environment;
@@ -109,7 +110,7 @@ public class Camera extends Activity {
         bmOptions.inSampleSize = scaleFactor;
         bmOptions.inPurgeable = true;
 
-        Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
+        Bitmap bitmap = ((BitmapDrawable) mImageView.getDrawable()).getBitmap();
 
         mImageView.setImageBitmap(bitmap);
         mImageView.setVisibility(View.VISIBLE);

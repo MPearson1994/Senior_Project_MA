@@ -17,7 +17,7 @@ public class GridAdapter extends BaseAdapter {
     Context context;
 
     private final String[] values;
-    private final  int [] images;
+    private final int[] images;
 
     View view;
     LayoutInflater layoutInflater;
@@ -51,7 +51,7 @@ public class GridAdapter extends BaseAdapter {
         if(convertView == null){
             view = new View(context);
             view = layoutInflater.inflate(R.layout.fragment_home, null);
-            ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
+            ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
             TextView textView = (TextView) view.findViewById(R.id.textView);
             imageView.setImageResource(images[i]);
             textView.setText(values[i]);
